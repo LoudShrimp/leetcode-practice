@@ -8,4 +8,4 @@ LEFT JOIN
 ON
     e.empId = b.empId
 WHERE
-    IFNULL(b.bonus, 0) < 1000
+    bonus is null or bonus < 1000
