@@ -8,6 +8,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [0001-two-sum](https://github.com/LoudShrimp/leetcode-practice/tree/master/0001-two-sum) |
 | [0217-contains-duplicate](https://github.com/LoudShrimp/leetcode-practice/tree/master/0217-contains-duplicate) |
+| [0792-binary-search](https://github.com/LoudShrimp/leetcode-practice/tree/master/0792-binary-search) |
 ## Hash Table
 |  |
 | ------- |
@@ -33,4 +34,8 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0020-valid-parentheses](https://github.com/LoudShrimp/leetcode-practice/tree/master/0020-valid-parentheses) |
+## Binary Search
+|  |
+| ------- |
+| [0792-binary-search](https://github.com/LoudShrimp/leetcode-practice/tree/master/0792-binary-search) |
 <!---LeetCode Topics End-->
