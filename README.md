@@ -7,6 +7,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0001-two-sum](https://github.com/LoudShrimp/leetcode-practice/tree/master/0001-two-sum) |
+| [0078-subsets](https://github.com/LoudShrimp/leetcode-practice/tree/master/0078-subsets) |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/LoudShrimp/leetcode-practice/tree/master/0121-best-time-to-buy-and-sell-stock) |
 | [0217-contains-duplicate](https://github.com/LoudShrimp/leetcode-practice/tree/master/0217-contains-duplicate) |
 | [0792-binary-search](https://github.com/LoudShrimp/leetcode-practice/tree/master/0792-binary-search) |
@@ -97,4 +98,12 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0572-subtree-of-another-tree](https://github.com/LoudShrimp/leetcode-practice/tree/master/0572-subtree-of-another-tree) |
+## Backtracking
+|  |
+| ------- |
+| [0078-subsets](https://github.com/LoudShrimp/leetcode-practice/tree/master/0078-subsets) |
+## Bit Manipulation
+|  |
+| ------- |
+| [0078-subsets](https://github.com/LoudShrimp/leetcode-practice/tree/master/0078-subsets) |
 <!---LeetCode Topics End-->
