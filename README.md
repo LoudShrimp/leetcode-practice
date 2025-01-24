@@ -29,6 +29,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [0020-valid-parentheses](https://github.com/LoudShrimp/leetcode-practice/tree/master/0020-valid-parentheses) |
 | [0125-valid-palindrome](https://github.com/LoudShrimp/leetcode-practice/tree/master/0125-valid-palindrome) |
+| [0227-basic-calculator-ii](https://github.com/LoudShrimp/leetcode-practice/tree/master/0227-basic-calculator-ii) |
 | [0242-valid-anagram](https://github.com/LoudShrimp/leetcode-practice/tree/master/0242-valid-anagram) |
 ## Two Pointers
 |  |
@@ -39,6 +40,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0020-valid-parentheses](https://github.com/LoudShrimp/leetcode-practice/tree/master/0020-valid-parentheses) |
+| [0227-basic-calculator-ii](https://github.com/LoudShrimp/leetcode-practice/tree/master/0227-basic-calculator-ii) |
 ## Binary Search
 |  |
 | ------- |
@@ -117,4 +119,8 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0200-number-of-islands](https://github.com/LoudShrimp/leetcode-practice/tree/master/0200-number-of-islands) |
+## Math
+|  |
+| ------- |
+| [0227-basic-calculator-ii](https://github.com/LoudShrimp/leetcode-practice/tree/master/0227-basic-calculator-ii) |
 <!---LeetCode Topics End-->
