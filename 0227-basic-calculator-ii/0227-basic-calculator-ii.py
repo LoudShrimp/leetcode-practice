@@ -3,26 +3,29 @@ class Solution:
         if not s:
             return 0
 
-        stack, currNum, op = [], 0, "+"
-        allOps = {"+", "-", "*", "/"}
-        nums = set(str(x) for x in range(10))
+        stack = []
+        currNum = 0
+        preOp = '+'
 
-        for i in range(len(s)):
-            char = s[i]
+        s += '+'
+        for c in s:
+            if c.isdigit():
+                currNum = currNum * 10 + int(c)
+            elif c == ' ':
+                continue
 
-            if char in nums:
-                currNum = currNum * 10 + int(char)
-
-            if char in allOps or i == len(s) - 1:
-                if op == "+":
+            else:
+                if preOp == '+':
                     stack.append(currNum)
-                elif op == "-":
+                elif preOp == '-':
                     stack.append(-currNum)
-                elif op == "*":
-                    stack[-1] *= currNum
-                elif op == "/":
-                    stack[-1] = int(stack[-1]/currNum)
-
+                elif preOp == '*':
+                    prevNum = stack.pop()
+                    stack.append(prevNum * currNum)
+                elif preOp == '/':
+                    prevNum = stack.pop()
+                    stack.append(int(prevNum / currNum))
                 currNum = 0
-                op = char
+                preOp = c
         return sum(stack)
+            
