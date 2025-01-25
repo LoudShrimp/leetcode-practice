@@ -5,27 +5,30 @@ class Solution:
 
         stack = []
         currNum = 0
-        preOp = '+'
+        prevOp = '+'
 
         s += '+'
         for c in s:
+            #if the character is not an operator
             if c.isdigit():
                 currNum = currNum * 10 + int(c)
             elif c == ' ':
                 continue
 
+
+            #if the character is an operator
             else:
-                if preOp == '+':
+                if prevOp == '+':
                     stack.append(currNum)
-                elif preOp == '-':
+                elif prevOp == '-':
                     stack.append(-currNum)
-                elif preOp == '*':
+                elif prevOp == '*':
                     prevNum = stack.pop()
                     stack.append(prevNum * currNum)
-                elif preOp == '/':
+                elif prevOp == '/':
                     prevNum = stack.pop()
                     stack.append(int(prevNum / currNum))
+
                 currNum = 0
-                preOp = c
+                prevOp = c
         return sum(stack)
-            
