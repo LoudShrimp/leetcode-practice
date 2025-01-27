@@ -2,33 +2,38 @@ class Solution:
     def calculate(self, s: str) -> int:
         if not s:
             return 0
-
-        stack = []
-        currNum = 0
+        
+        prevNum = currNum = result = 0
         prevOp = '+'
 
-        s += '+'
+        s += 'e'
         for c in s:
-            #if the character is not an operator
+            #check if the c is not an operator
             if c.isdigit():
                 currNum = currNum * 10 + int(c)
             elif c == ' ':
                 continue
 
-
-            #if the character is an operator
+            #check if the c is an operator
             else:
                 if prevOp == '+':
-                    stack.append(currNum)
-                elif prevOp == '-':
-                    stack.append(-currNum)
-                elif prevOp == '*':
-                    prevNum = stack.pop()
-                    stack.append(prevNum * currNum)
-                elif prevOp == '/':
-                    prevNum = stack.pop()
-                    stack.append(int(prevNum / currNum))
+                    result += currNum
 
-                currNum = 0
+                    prevNum = currNum
+                if prevOp == '-':
+                    result -= currNum
+
+                    prevNum = -currNum
+                if prevOp == '*':
+                    result -= prevNum
+                    result += prevNum * currNum
+                    
+                    prevNum = prevNum * currNum
+                if prevOp == '/':
+                    result -= prevNum
+                    result += int(prevNum / currNum)
+
+                    prevNum = int(prevNum / currNum)
                 prevOp = c
-        return sum(stack)
+                currNum = 0
+        return result
